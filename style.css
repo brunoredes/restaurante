@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+header,
+nav,
+footer {
+  background-color: #ffea96;
+}
+main {
+  background-color: #ff9532;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+#Banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-image: url("./assets/img/foto_capa.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+article ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  li {
+    list-style: none;
+  }
+}
+
+#Pratos {
+  /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 24%, rgba(0,212,255,1) 100%); */
+  background: transparent;
+  margin-top: 24px;
+}
+#Pratos article {
+  margin-top: 16px;
+}
+
+figure {
+  width: 100%;
+}
+figure img {
+  width: 100%;
+}
+
+figure > figcaption {
+  text-align: center;
+}
+.CardPrato {
+  background-color: #fff;
+  border: #ffea96 solid 2px;
+  border-radius: 15px;
+  padding: 30px;
+  /* margin: 32px; */
+}
+
+.franchise__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.franchise__item {
+  background-color: #fff;
+  border: 2px solid #ffea96;
+
+  figcaption {
+    text-align: center;
+  }
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
